@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="header-container">
-            <h1 class="logo">UrbanX 🚖</h1>
+            <h1 class="logo">UrbanX</h1>
             <nav>
                 <a href="#home" class="nav-link active" data-section="home">Accueil</a>
                 <a href="#book" class="nav-link" data-section="book">Réserver</a>
@@ -21,38 +21,44 @@
     <main>
         <section id="home" class="section active">
             <div class="hero">
-                <h2>Bienvenue sur UrbanX</h2>
-                <p>Réservez votre trajet en quelques clics</p>
+                <h2>Où allez-vous ?</h2>
+                <p>Déplacez-vous en ville avec UrbanX</p>
             </div>
         </section>
 
         <section id="book" class="section">
-            <div class="container">
+            <div class="booking-container">
                 <h2>Réserver un trajet</h2>
                 <form id="booking-form" class="booking-form">
-                    <div class="form-group">
-                        <label for="departure">Point de départ</label>
-                        <input 
-                            type="text" 
-                            id="departure" 
-                            name="departure"
-                            placeholder="Entrez votre adresse de départ" 
-                            required
-                        >
+                    <div class="input-wrapper">
+                        <div class="input-icon departure-icon">📍</div>
+                        <div class="form-group">
+                            <label for="departure">Où êtes-vous ?</label>
+                            <input 
+                                type="text" 
+                                id="departure" 
+                                name="departure"
+                                placeholder="Adresse de départ" 
+                                required
+                            >
+                        </div>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="destination">Destination</label>
-                        <input 
-                            type="text" 
-                            id="destination" 
-                            name="destination"
-                            placeholder="Entrez votre destination" 
-                            required
-                        >
+                    <div class="input-wrapper">
+                        <div class="input-icon destination-icon">🎯</div>
+                        <div class="form-group">
+                            <label for="destination">Où allez-vous ?</label>
+                            <input 
+                                type="text" 
+                                id="destination" 
+                                name="destination"
+                                placeholder="Destination" 
+                                required
+                            >
+                        </div>
                     </div>
                     
-                    <button type="submit" class="btn-primary">Réserver un trajet</button>
+                    <button type="submit" class="btn-primary">Demander une course</button>
                 </form>
             </div>
         </section>

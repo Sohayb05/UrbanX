@@ -107,12 +107,12 @@ form.addEventListener('submit', (e) => {
     // Afficher un message de confirmation
     const btn = form.querySelector('button[type="submit"]');
     const originalText = btn.textContent;
-    btn.textContent = '✓ Réservé !';
-    btn.style.background = 'linear-gradient(135deg, #48bb78 0%, #38a169 100%)';
+    btn.textContent = '✓ Demandé !';
+    btn.style.opacity = '0.8';
     
     setTimeout(() => {
         btn.textContent = originalText;
-        btn.style.background = '';
+        btn.style.opacity = '1';
     }, 2000);
     
     // Basculer vers l'onglet Historique
