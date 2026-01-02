@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanX 🚖</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>UrbanX 🚖</h1>
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#">Réserver</a>
+            <a href="#">Historique</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reservation">
+            <h2>Réserver un trajet</h2>
+            <form id="booking-form">
+                <label>Point de départ</label>
+                <input type="text" placeholder="Adresse de départ" required>
+                
+                <label>Destination</label>
+                <input type="text" placeholder="Adresse de destination" required>
+                
+                <button type="submit">Réserver</button>
+            </form>
+        </section>
+
+        <section class="history">
+            <h2>Historique des trajets</h2>
+            <ul id="ride-history">
+                <!-- Les trajets réservés apparaîtront ici -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
